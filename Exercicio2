@@ -1,0 +1,7 @@
+dicionario_de_pessoas = {
+    "pessoa1": {"nome": "João", "idade": 22},
+    "pessoa2": {"nome": "Carlos", "idade": 20},
+    "pessoa3": {"nome": "Otavio", "idade": 14}, 
+    "pessoa4": {"nome": "Luiz", "idade": 15},
+}
+print(dicionario_de_pessoas)
