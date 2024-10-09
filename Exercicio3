@@ -1,0 +1,12 @@
+pessoas = {
+    "pessoa1" : {"nome": "João", "idade": 22},
+    "pessoa2" : {"nome": "Luiz", "idade": 14},
+    }
+def nome_pessoa(chave):
+    if chave in pessoas:
+        print("Idade: ", pessoas[chave]["idade"])
+    else:
+        print("Pessoa não encontrada!")
+nome_pessoa("pessoa1")
+nome_pessoa("pessoa2")
+nome_pessoa("pessoa3")
