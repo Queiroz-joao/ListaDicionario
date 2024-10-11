@@ -1,0 +1,27 @@
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": 22},
+    "pessoa2": {"nome": "Pedro", "idade": 20},
+    "pessoa3": {"nome": "Luiz", "idade": 14},
+}
+
+def nova_idade (chave, nova_idade): 
+    if chave in pessoas:
+        
+        print(f"A idade de {pessoas[chave]['nome']} foi atualizada para {nova_idade}anos.")
+        pessoas[chave]["idade"] = nova_idade
+    else:
+        print("Chave não encontrada")
+
+idade1 = int(input("Digite a nova idade: "))
+idade2 = int(input("Digite a nova idade: "))
+idade3 = int(input("Digite a nova idade: "))
+nova_idade("pessoa1", idade1)
+nova_idade("pessoa2", idade2)
+nova_idade("pessoa3",idade3)
+print(pessoas["pessoa1"])
+print(pessoas["pessoa2"])
+print(pessoas["pessoa3"])
+
+
+
+
