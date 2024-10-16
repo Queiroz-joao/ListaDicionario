@@ -1,0 +1,18 @@
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": 22},
+    "pessoa2": {"nome": "Pedro", "idade": 20},
+    "pessoa3": {"nome": "Luiz", "idade": 14},
+    "pessoa4": {"nome": "Otávio", "idade": 15},
+    "pessoa5": {"nome": "Enilda", "idade": 49},
+    "pessoa6": {"nome": "Euzébio", "idade": 50},
+}
+
+def remover_pessoa(pessoas, pessoa1):
+    if pessoa1 in pessoas: 
+        del pessoas[pessoa1]
+        print(f"{pessoa1} removida com sucesso!")
+    else:
+        print(f"{pessoa1} não foi removida!")
+
+remover_pessoa(pessoas, "pessoa2")
+print(pessoas)
