@@ -1,0 +1,12 @@
+def media_idades(dicionario):
+    total_idades = sum(pessoa['idade'] for pessoa in dicionario.values())
+    return total_idades / len(dicionario)
+
+
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": 22},
+    "pessoa2": {"nome": "Maria", "idade": 30}
+}
+
+media = media_idades(pessoas)
+print(media)
