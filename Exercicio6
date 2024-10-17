@@ -1,0 +1,10 @@
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": "22"},
+    "pessoa2": {"nome": "Luiz", "idade": "14"},
+}
+
+def contar_pessoas(pessoas):
+    return len(pessoas)
+
+quantidade = contar_pessoas(pessoas)
+print(pessoas)
