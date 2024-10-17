@@ -1,0 +1,14 @@
+def pessoas_com_j(dicionario):
+    return [pessoa for pessoa in dicionario.values() if pessoa['nome'].startswith('J')]
+
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": "22"},
+    "pessoa2": {"nome": "Luiz", "idade": "14"},
+    "pessoa3": {"nome": "Joás", "idade": "24"},
+    "pessoa4": {"nome": "Joaquim", "idade": "20"},
+    "pessoa5": {"nome": "Junior", "idade": "35"},
+    "pessoa6": {"nome": "Euzébio", "idade": "49"},
+}
+
+lista_com_j = pessoas_com_j(pessoas)
+print(lista_com_j)
