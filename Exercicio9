@@ -1,0 +1,10 @@
+def pessoa_mais_nova(dicionario):
+    return min(dicionario.values(), key=lambda pessoa: pessoa['idade'])
+
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": 22},
+    "pessoa2": {"nome": "Maria", "idade": 30}
+}
+
+mais_nova = pessoa_mais_nova(pessoas)
+print(mais_nova)
