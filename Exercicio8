@@ -1,0 +1,10 @@
+def pessoa_mais_velha(dicionario):
+    return max(dicionario.values(), key=lambda pessoa: pessoa['idade'])
+
+pessoas = {
+    "pessoa1": {"nome": "João", "idade": 22},
+    "pessoa2": {"nome": "Maria", "idade": 30}
+}
+
+mais_velha = pessoa_mais_velha(pessoas)
+print(mais_velha)
